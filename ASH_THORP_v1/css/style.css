@@ -62,3 +62,168 @@
   
 
   
+
+
+/* 3. MAQUETACIÓN----------------------------------------------------- */
+body {
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #232323;
+    background: #FBF8F3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #8000FF;
+    text-decoration: none;
+    outline: none;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  a:hover,
+  a:visited,
+  a:active,
+  a:focus {
+    color: #8000FF;
+    text-decoration: underline;
+    outline: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #232323;
+    line-height: 2;
+    backface-visibility: hidden;
+  }
+  
+  p a,
+  p a:hover {
+    color: #8000FF;
+    text-decoration: underline;
+    outline: none;
+    transition: all 0.5s linear;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  ::-moz-selection {
+    background: #8000FF;
+    color: #FBF8F3;
+  }
+  
+  ::selection {
+    background: #8000FF;
+    color: #FBF8F3;
+  }
+  
+  .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .col-lg-push-12 {
+    left: 0%;
+  }
+  
+  .col-lg-pull-12 {
+    right: 0%;
+  }
+  
+  
+  /* PÁGINA DISEÑO SUPERIOR ----------------------------------------- */
+  .upper-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    margin: 0;
+  }
+  
+  
+  /* PÁGINA DISEÑO INFERIOR -------------------------------------*/
+  #about,
+  #facts,
+  #services,
+  #works,
+  #nosotros,
+  #contact {
+    position: relative;
+    height: auto;
+    min-height: inherit;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    background: none;
+  }
+  
+  
+  /* 4. BORDES DE LOS COJONES--------------------------------- */
+  .border-top,
+  .border-top.top-position-primary {
+    position: fixed;
+    background: none;
+    transition: all 1.5s ease;
+    z-index: 100;
+  }
+  
+  .border-top.top-position-primary {
+    background: #FBF8F3;
+  }
+  
+  .border-top {
+    width: 100%;
+    height: 110px;
+    left: 0;
+    top: 0;
+  }
+  
+  @media only screen and (max-width: 880px) {
+    .border-top {
+      height: 70px;
+    }
+  }
+  
+  .border-top.top-position-primary {
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+  
+  @media only screen and (max-width: 880px) {
+    .border-top.top-position-primary {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  
